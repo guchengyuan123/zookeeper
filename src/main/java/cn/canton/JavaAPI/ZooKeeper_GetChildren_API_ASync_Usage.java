@@ -19,7 +19,7 @@ public class ZooKeeper_GetChildren_API_ASync_Usage implements Watcher {
 
     public static void main(String[] args) throws Exception{
     	String path = "/zk-book";
-        zk = new ZooKeeper("domain1.book.zookeeper:2181", 
+        zk = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",
 				5000, //
 				new ZooKeeper_GetChildren_API_ASync_Usage());
         connectedSemaphore.await();
