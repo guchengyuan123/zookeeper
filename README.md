@@ -26,6 +26,8 @@ JavaAPI包中类说明，zookeeper原生api接口测试案例
 
 12、SetData_API_ASync_Usage                      ：使用异步API更新节点数据内容
 
+13、Exist_API_Sync_Usage                         ：判断节点是否存在
+
 =================异步接口=================
 
 AsyncCallback.StringCallback()
