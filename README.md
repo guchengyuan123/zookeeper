@@ -12,6 +12,8 @@
 
 5、ZooKeeper_Create_API_ASync_Usage              使用异步API创建一个节点
 
+6、Delete_API_Sync_Usage                         删除一个节点
+
 =================异步接口=================
 
 AsyncCallback.StringCallback()
