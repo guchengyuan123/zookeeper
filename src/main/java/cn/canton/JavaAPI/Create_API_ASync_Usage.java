@@ -11,7 +11,7 @@ import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;
 
 // ZooKeeper API创建节点，使用异步(async)接口。
-public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
+public class Create_API_ASync_Usage implements Watcher {
 
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
 
@@ -19,7 +19,7 @@ public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
 
         ZooKeeper zookeeper = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",
                 5000, //
-                new ZooKeeper_Create_API_ASync_Usage());
+                new Create_API_ASync_Usage());
         connectedSemaphore.await();
 
         zookeeper.create("/zk-test-ephemeral-", "".getBytes(),

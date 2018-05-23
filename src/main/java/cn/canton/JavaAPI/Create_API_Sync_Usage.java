@@ -5,14 +5,14 @@ import org.apache.zookeeper.ZooDefs.Ids;
 
 import java.util.concurrent.CountDownLatch;
 
-public class ZooKeeper_Create_API_Sync_Usage implements Watcher {
+public class Create_API_Sync_Usage implements Watcher {
 
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
 
     public static void main(String[] args) throws Exception {
         ZooKeeper zooKeeper = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",
                 5000,
-                new ZooKeeper_Create_API_Sync_Usage());
+                new Create_API_Sync_Usage());
         connectedSemaphore.await();
 
         String path1 = zooKeeper.create("/zk-test-ephemeral-",

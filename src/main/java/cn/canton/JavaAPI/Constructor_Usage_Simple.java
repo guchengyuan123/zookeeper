@@ -6,11 +6,11 @@ import org.apache.zookeeper.ZooKeeper;
 
 import java.util.concurrent.CountDownLatch;
 
-public class ZooKeeper_Constructor_Usage_Simple implements Watcher {
+public class Constructor_Usage_Simple implements Watcher {
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
 
     public static void main(String[] args) throws Exception {
-        ZooKeeper zooKeeper = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",5000, new ZooKeeper_Constructor_Usage_Simple());
+        ZooKeeper zooKeeper = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",5000, new Constructor_Usage_Simple());
         System.out.println(zooKeeper.getState());
         try {
             connectedSemaphore.await();

@@ -12,7 +12,7 @@ import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 
 //ZooKeeper API 获取子节点列表，使用异步(ASync)接口。
-public class ZooKeeper_GetChildren_API_ASync_Usage implements Watcher {
+public class GetChildren_API_ASync_Usage implements Watcher {
 
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
     private static ZooKeeper zk = null;
@@ -21,7 +21,7 @@ public class ZooKeeper_GetChildren_API_ASync_Usage implements Watcher {
     	String path = "/zk-book";
         zk = new ZooKeeper("127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183",
 				5000, //
-				new ZooKeeper_GetChildren_API_ASync_Usage());
+				new GetChildren_API_ASync_Usage());
         connectedSemaphore.await();
         zk.create(path, "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
