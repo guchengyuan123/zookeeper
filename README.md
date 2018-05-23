@@ -1,6 +1,6 @@
 # zookeeperDemo
 
-类说明
+JavaAPI包中类说明，zookeeper原生api接口测试案例
 
 1、ZookeeperTest                                 ：测试zookeeper连接是否成功
 
@@ -21,6 +21,10 @@
 9、GetData_API_Sync_Usage                        ：使用同步API获取节点数据内容
 
 10、GetData_API_ASync_Usage                      ：使用异步API获取节点数据内容
+
+11、SetData_API_Sync_Usage                       ：使用同步API更新节点数据内容
+
+12、SetData_API_ASync_Usage                      ：使用异步API更新节点数据内容
 
 =================异步接口=================
 
