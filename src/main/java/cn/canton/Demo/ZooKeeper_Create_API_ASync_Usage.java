@@ -44,7 +44,7 @@ public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
 }
 class IStringCallback implements AsyncCallback.StringCallback{
     public void processResult(int rc, String path, Object ctx, String name) {
-        System.out.println("Create path result: [" + rc + ", " + path + ", "
-                + ctx + ", real path name: " + name);
+        System.out.println("Create path result: [ " + rc + ", " + path + ", "
+                + ctx + ", real path name: " + name+" ]");
     }
 }
