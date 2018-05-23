@@ -1,4 +1,4 @@
-package cn.canton.Demo;
+package cn.canton.JavaAPI;
 
 
 import java.util.concurrent.CountDownLatch;

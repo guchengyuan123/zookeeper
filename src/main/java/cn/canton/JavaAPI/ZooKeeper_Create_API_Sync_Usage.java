@@ -1,4 +1,4 @@
-package cn.canton.Demo;
+package cn.canton.JavaAPI;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.ZooDefs.Ids;

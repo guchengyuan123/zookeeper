@@ -1,4 +1,4 @@
-package cn.canton.Demo;
+package cn.canton.JavaAPI;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
