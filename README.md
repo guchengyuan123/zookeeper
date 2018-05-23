@@ -14,6 +14,14 @@
 
 6、Delete_API_Sync_Usage                         ：删除一个节点
 
+7、ZooKeeper_Create_API_Sync_Usage               ：使用同步API获取子节点列表
+
+8、ZooKeeper_Create_API_ASync_Usage              ：使用异步API获取子节点列表
+
+9、GetData_API_Sync_Usage                        ：使用同步API获取节点数据内容
+
+10、GetData_API_ASync_Usage                      ：使用异步API获取节点数据内容
+
 =================异步接口=================
 
 AsyncCallback.StringCallback()
