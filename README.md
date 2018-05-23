@@ -38,6 +38,8 @@ AuthSample包中类说明
 
 对于某个节点删除而言，权限作用范围是其子节点，删除该节点即使添加权限也可以自由删除，删除子节点需要加相应的权限
 
+命令行：addauth digest foo:true
+
 =================异步接口=================
 
 AsyncCallback.StringCallback()
