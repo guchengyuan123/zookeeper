@@ -13,13 +13,23 @@
 5、ZooKeeper_Create_API_ASync_Usage              使用异步API创建一个节点
 
 =================异步接口=================
+
 AsyncCallback.StringCallback()
+
 AsyncCallback.StatCallback()
+
 AsyncCallback.DataCallback()
+
 AsyncCallback.ACLCallback()
+
 AsyncCallback.ChildrenCallback()
+
 AsyncCallback.Children2Callback()
+
 AsyncCallback.VoidCallback()
+
 同步接口调用过程中，我们需要关注接口抛出异常的可能
+
 异步接口中，接口本身不会抛出异常，所有的异常都会在回调函数中通过ResultCode（响应码）来提现
+
 =================异步接口=================
