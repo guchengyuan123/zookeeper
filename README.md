@@ -1,10 +1,15 @@
 # zookeeperDemo
 
 类说明
+
 1、ZookeeperTest                                 测试zookeeper连接是否成功
+
 2、ZooKeeper_Constructor_Usage_Simple            创建zookeeper最基本的会话实例
+
 3、ZooKeeper_Constructor_Usage_With_SID_PASSWD   用sessionId和sessionPassWD来创建zookeeper实例
+
 4、ZooKeeper_Create_API_Sync_Usage               使用同步API创建一个节点
+
 5、ZooKeeper_Create_API_ASync_Usage              使用异步API创建一个节点
 
 =================异步接口=================
