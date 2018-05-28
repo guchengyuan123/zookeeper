@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="zookeeper" />
         <module name="zookeeperDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="zookeeper" target="1.5" />
       <module name="zookeeperDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>

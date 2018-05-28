@@ -1,5 +1,7 @@
 # zookeeperDemo
 
+========================================
+
 JavaAPI包中类说明，zookeeper原生api接口测试案例
 
 1、ZookeeperTest                       ：测试zookeeper连接是否成功
@@ -28,7 +30,9 @@ JavaAPI包中类说明，zookeeper原生api接口测试案例
 
 13、Exist_API_Sync_Usage               ：判断节点是否存在
 
-AuthSample包中类说明
+========================================
+
+AuthSample包中类说明, zookeeper权限管理
 
 1、AuthSample                          ：创建节点时设置权限
 
@@ -39,6 +43,12 @@ AuthSample包中类说明
 对于某个节点删除而言，权限作用范围是其子节点，删除该节点即使添加权限也可以自由删除，删除子节点需要加相应的权限
 
 命令行：addauth digest foo:true
+
+========================================
+
+zkClient包中类说明
+
+zkClient包来增删改查
 
 =================异步接口=================
 
